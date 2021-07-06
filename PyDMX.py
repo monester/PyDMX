@@ -52,8 +52,6 @@ class PyDMX:
 if __name__ == '__main__':
     dmx = PyDMX('COM11')
 
-    for i in range(0,10):
-        dmx.set_random_data()
-        dmx.send()
+    dmx.send()
     
     del dmx
